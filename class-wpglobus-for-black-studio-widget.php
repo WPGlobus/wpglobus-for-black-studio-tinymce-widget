@@ -38,7 +38,8 @@ if ( ! class_exists( 'WPGlobus_BSWidget' ) ) :
 			}
 			
 			$enabled_pages = array(
-				'widgets.php'
+				'widgets.php',
+				'customize.php'
 			);
 
 			if ( WPGlobus_WP::is_pagenow( $enabled_pages ) ) :
@@ -107,7 +108,8 @@ i.mce-i-wpglobus-bs-separator:before {
 						'icon' => 'wpglobus-bs-separator',
 						'button' => $this->button,
 						'button_class'   => 'wpglobus_bs_widget_button_',
-						'button_classes' => 'widget btn wpglobus_bs_widget_button'
+						'button_classes' => 'widget btn wpglobus_bs_widget_button',
+						'pagenow'		 => WPGlobus_WP::pagenow()
 					)	
 				)
 			);
