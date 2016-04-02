@@ -3,7 +3,7 @@ Contributors: alexgff, tivnetinc, tivnet
 Donate link: http://www.wpglobus.com/
 Tags: globalization, i18n, international, l10n, wysiwyg widget, localization, multilanguage, multilingual, translate, translation, WPGlobus
 Requires at least: 4.0
-Tested up to: 4.4
+Tested up to: 4.5
 Stable tag: trunk
 License: GPLv2
 License URI: https://github.com/WPGlobus/wpglobus-for-black-studio-tinymce-widget/blob/master/LICENSE
@@ -51,6 +51,9 @@ Please check out the [WPGlobus Website](http://www.wpglobus.com/) for additional
 1. Wysiwyg editor interface.
 
 == Changelog ==
+
+= 1.1.0 =
+* Added: plugin are working with customizer
 
 = 1.0.1 =
 * Fixed: dialog start icon position for new widget
