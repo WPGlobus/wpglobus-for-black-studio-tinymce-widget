@@ -153,7 +153,7 @@
 		},	
 		onCustomize: function() {
 
-			$( document ).on( 'wpglobus_cusomize_control_added_widget', function( e, widget ) {
+			$( document ).on( 'wpglobus_customize_control_added_widget', function( e, widget ) {
 				
 				if ( widget.indexOf( 'black-studio' ) >= 0 ) {
 					setTimeout( function() {
@@ -245,7 +245,7 @@
 				}
 			});
 			
-			$( document ).on( 'wpglobus_cusomize_control_language', function( e, newLang ) {
+			$( document ).on( 'wpglobus_customize_control_language', function( e, newLang ) {
 
 				$.each( WPGlobusBSWidget.editor, function( editorID, obj ) {
 					tinymce.get( editorID ).setContent(
@@ -338,16 +338,19 @@
 			});			
 		},	
 		addEditorListener: function( id ) {
-			var p = $('#'+id).parents('.widget').attr('id');
+			var p = $( '#'+id ).parents( '.widget' ).attr( 'id' );
 			if ( typeof p != 'undefined' ) {
-				$('#'+p+' .widget-control-save').on('click',function(ev){
+				$( '#'+p+' .widget-control-save' ).on( 'click', function( ev ){
 					ev.preventDefault();
 					if ( tinymce.get(id) == null || tinymce.get(id).isHidden() ) {
 						// html mode
 						$('#'+id).val( api.content[id] );
 					} else {						
 						tinymce.get(id).setContent( api.content[id] );
-						tinymce.triggerSave();
+						/**
+						 * @todo remove
+						 */
+						//tinymce.triggerSave();
 					}	
 					api.ajaxActionId = id;
 				});
@@ -376,8 +379,8 @@
 						if ( language == WPGlobusCoreData.default_language ) {
 							api.fixDialogStartIcon(editor.id);
 							api.addEditorListener(editor.id);
-							api.content[editor.id]  = $('#'+editor.id).text();
-							api.language[editor.id] = api.option.language;
+							api.content[ editor.id ]  = $( '#'+editor.id ).text();
+							api.language[ editor.id ] = api.option.language;
 							$('#'+editor.id).val( api.getTranslation(editor,language) );
 							
 							active_class = ' active';
