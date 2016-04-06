@@ -91,7 +91,6 @@ i.mce-i-wpglobus-bs-separator:before {
 			wp_register_script(
 				'wpglobus-black-studio-widget-init',
 				plugin_dir_url( __FILE__ ) . 'wpglobus-for-black-studio-widget-init.js', //empty file
-				null,
 				array(),
 				WPGLOBUS_BS_WIDGET,
 				true
