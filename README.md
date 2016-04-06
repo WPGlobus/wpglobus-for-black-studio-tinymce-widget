@@ -53,6 +53,9 @@ Please check out the [WPGlobus Website](http://www.wpglobus.com/) for additional
 
 ## Changelog ##
 
+### 1.1.1 ###
+* Fixed: incorrect trigger name
+
 ### 1.1.0 ###
 * Added: plugin are working with customizer
 
