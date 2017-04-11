@@ -1,7 +1,7 @@
 === WPGlobus for Black Studio TinyMCE Widget ===
 Contributors: alexgff, tivnetinc, tivnet
 Donate link: http://www.wpglobus.com/
-Tags: globalization, i18n, international, l10n, wysiwyg widget, localization, multilanguage, multilingual, translate, translation, WPGlobus
+Tags: WPGlobus, wysiwyg widget, globalization, i18n, international, localization, multilingual, translate
 Requires at least: 4.0
 Tested up to: 4.7
 Stable tag: trunk
