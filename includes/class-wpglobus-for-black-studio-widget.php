@@ -90,9 +90,9 @@ i.mce-i-wpglobus-bs-separator:before {
 			
 			wp_register_script(
 				'wpglobus-black-studio-widget-init',
-				plugin_dir_url( __FILE__ ) . 'wpglobus-for-black-studio-widget-init.js', //empty file
+				plugin_dir_url( __FILE__ ) . 'js/wpglobus-for-black-studio-widget-init.js', //empty file
 				array(),
-				WPGLOBUS_BS_WIDGET,
+				WPGLOBUS_BS_WIDGET_VERSION,
 				true
 			);
 			wp_enqueue_script( 'wpglobus-black-studio-widget-init' );
@@ -101,7 +101,7 @@ i.mce-i-wpglobus-bs-separator:before {
 				'WPGlobusBSWidget',
 				array(
 					'data' => array(
-						'version' => WPGLOBUS_BS_WIDGET,
+						'version' => WPGLOBUS_BS_WIDGET_VERSION,
 						'button_separator' => $this->button_separator,
 						'text_separator' => '',
 						'icon' => 'wpglobus-bs-separator',
@@ -145,9 +145,9 @@ i.mce-i-wpglobus-bs-separator:before {
 		 */
 		function mce_external_plugins( $plugin_array ) {
 			
-			$plugin_array[ $this->button_separator ] = plugin_dir_url( __FILE__ ) . 'wpglobus-for-black-studio-widget'.self::$_SCRIPT_SUFFIX.'.js';
+			$plugin_array[ $this->button_separator ] = plugin_dir_url( __FILE__ ) . 'js/wpglobus-for-black-studio-widget'.self::$_SCRIPT_SUFFIX.'.js';
 			foreach( WPGlobus::Config()->enabled_languages as $language ) {
-				$plugin_array[ $this->button . $language ] = plugin_dir_url( __FILE__ ) . 'wpglobus-for-black-studio-widget'.self::$_SCRIPT_SUFFIX.'.js';
+				$plugin_array[ $this->button . $language ] = plugin_dir_url( __FILE__ ) . 'js/wpglobus-for-black-studio-widget'.self::$_SCRIPT_SUFFIX.'.js';
 			}
 			return $plugin_array;
 

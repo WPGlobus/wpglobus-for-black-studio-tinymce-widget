@@ -1,0 +1,10 @@
+{
+  "text_domain": "wpglobus-for-bs-widget",
+  "version": {
+    "define": "WPGLOBUS_BS_WIDGET_VERSION"
+  },
+  "path": {
+    "dist": "/var/www/u/wpglobus.com/dist",
+    "js": "includes/js"
+  }
+}

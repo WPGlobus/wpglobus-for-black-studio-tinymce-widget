@@ -3,7 +3,7 @@
 **Donate link:** http://www.wpglobus.com/  
 **Tags:** WPGlobus, wysiwyg widget, globalization, i18n, international, localization, multilingual, translate  
 **Requires at least:** 4.0  
-**Tested up to:** 4.7
+**Tested up to:** 4.8
 **Stable tag:** trunk  
 **License:** GPLv2
 **License URI:** https://github.com/WPGlobus/wpglobus-for-black-studio-tinymce-widget/blob/master/LICENSE  
@@ -52,6 +52,10 @@ Please check out the [WPGlobus Website](http://www.wpglobus.com/) for additional
 ![Wysiwyg editor interface.](https://github.com/WPGlobus/wpglobus-for-black-studio-tinymce-widget/blob/master/assets/screenshot-1.png)
 
 ## Changelog ##
+
+### 1.2.0 ###
+* Compatibility: WordPress 4.8
+* Added: revising code.
 
 ### 1.1.1 ###
 * Fixed: incorrect trigger name
