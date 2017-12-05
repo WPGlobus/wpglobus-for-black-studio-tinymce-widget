@@ -1,12 +1,12 @@
 === WPGlobus for Black Studio TinyMCE Widget ===
-Contributors: alexgff, tivnetinc, tivnet
+Contributors: alexgff, tivnetinc
 Donate link: http://www.wpglobus.com/
-Tags: WPGlobus, wysiwyg widget, globalization, i18n, international, localization, multilingual, translate
+Tags: WPGlobus, wysiwyg widget, international, localization, multilingual, translate
 Requires at least: 4.0
-Tested up to: 4.8
+Tested up to: 4.9
 Stable tag: trunk
-License: GPLv2
-License URI: https://github.com/WPGlobus/wpglobus-for-black-studio-tinymce-widget/blob/master/LICENSE
+License: GPL-3.0
+License URI: http://www.gnu.org/licenses/gpl.txt
 
 == Description ==
 
